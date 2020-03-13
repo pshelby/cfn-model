@@ -44,7 +44,7 @@ jobs:
           rubygems_api_key: ${{secrets.rubygems_api_key}}
       - name: Create release with changelog
         id: gh_release
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@74e7c42
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
